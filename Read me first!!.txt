@@ -1,0 +1,24 @@
+1. 권장 환경: Windows
+
+2. YouTube Data API v3 키를 직접 발급받아 4개의 파이썬 스크립트 안에 있는 <YOUTUBE_API_KEY = "YouTube Data API v3">에 입력
+	a. https://console.cloud.google.com/
+	b. 새 프로젝트
+	c. API 및 서비스
+	d. 라이브러리
+	e. YouTube Data API v3
+	f. 사용
+	g. 사용자 인증 정보 만들기
+	h. 사용자 인증 정보
+	i. 키 표시
+
+3. 4개의 파이썬 스크립트 안에 있는 <QUERY = "USA">에 원하는 모니터링 대상 검색어 입력
+
+4. PowerShell에 다음 명령어 차례로 입력
+	a. pip install selenium
+	b. pip install --upgrade selenium
+
+5. 작업 스케줄러가 'youtube_monitoring.bat'을 1시간마다 무기한으로 실행하도록 설정
+	a. 새 작업 만들기
+	b. 일반 --> 사용자 또는 그룹 변경 --> administrators --> 확인 --> 가장 높은 수준의 권한으로 실행
+	c. 동작 --> 새로 만들기 --> 찾아보기 --> 'youtube_monitoring.bat' --> 열기 --> 시작 위치: 'youtube_monitoring.bat' 상위 폴더의 절대 경로
+	d. 트리거 --> 새로 만들기 --> 매일 --> 작업 반복 간격: 1시간 --> 기간: 무기한으로
