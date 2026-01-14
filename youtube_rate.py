@@ -28,7 +28,7 @@ import requests
 
 ##### 사용자 입력 기반 기본 설정 #####
 
-QUERY = "국회" # TODO: 원하는 검색어로 교체
+QUERY = "USA" # TODO: 원하는 검색어로 교체
 
 SEARCH_FILTER_SP = "CAESBAgBEAE%253D" # 필터: 업로드 날짜(지난 1시간) + 구분(동영상) + 정렬기준(평점)
 
@@ -39,7 +39,7 @@ MAX_SCROLL_TRIES = 100 # 최대 100번까지만 스크롤하고 정지
 
 KST = datetime.timezone(datetime.timedelta(hours=9)) # 모든 시간은 KST를 기준으로 저장
 
-YOUTUBE_API_KEY = "AIzaSyAiX0XZhHeXMV7eDELWB54ecVZrU6S1T4I" # TODO: 본인의 YouTube Data API v3 키로 교체
+YOUTUBE_API_KEY = "YouTube Data API v3" # TODO: 본인의 YouTube Data API v3 키로 교체
 
 ##########
 
