@@ -28,7 +28,7 @@ import requests
 
 ##### 사용자 입력 기반 기본 설정 #####
 
-QUERY = "USA" # TODO: 원하는 검색어로 교체
+QUERY = "DFRC" # TODO: 원하는 검색어로 교체
 
 SEARCH_FILTER_SP = "CAMSBAgBEAE%253D" # 필터: 업로드 날짜(지난 1시간) + 구분(동영상) + 정렬기준(조회수)
 
